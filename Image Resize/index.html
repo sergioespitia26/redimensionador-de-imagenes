@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Resizer</title>
+    <link rel="icon" type="image/png" href="imagenes/logo sin fondo.png">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>
+            <img src="imagenes/logo sin fondo.png" alt=" Image Resize">Image Resize
+        </h1>
+       
+        <p>Selecciona una imagen y sigue los pasos:</p>
+        <ol>
+            <li>Haz clic en "Seleccionar una imagen" para cargar una imagen.</li>
+            <li>La imagen se redimensionará automáticamente a 950x950 píxeles.</li>
+            <li>Haz clic en "Redimensionar a 950x950" para procesar la imagen.</li>
+            <li>Se mostrará la opción de descarga. Haz clic en "Descargar Imagen" para guardarla.</li>
+        </ol>
+
+        <div class="upload-btn-wrapper">
+            <button class="btn">Seleccionar una imagen</button>
+            <input type="file" id="fileInput" accept="image/*">
+        </div>
+        <canvas id="canvas" width="950" height="950"></canvas>
+        <button id="resizeButton">Redimensionar a 950x950</button>
+        <a id="downloadLink" class="download-link" download="resized_image.jpg">Descargar Imagen</a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

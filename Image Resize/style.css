@@ -1,0 +1,121 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #543964, #000000, #4a1264);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #fff;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background: linear-gradient(to bottom, #000000, #831a8d, #000000);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+h1 {
+    font-size: 50px;
+    color: #3498db;
+    display: flex;
+    align-items: center; /* Centra verticalmente el contenido */
+    justify-content: center; /* Centra horizontalmente el contenido */
+}
+
+h1 img {
+    width: 60px;
+    height: auto;
+    margin-right: 1px;
+    vertical-align: middle;
+}
+
+p {
+    margin: 20px 0;
+    font-size: 25px;
+}
+
+ol {
+    text-align: left;
+    margin-left: 20px;
+    font-size: 25px;
+}
+
+ol li::before {
+    content: '➤ ';
+    color: #3498db;
+    margin-right: 5px;
+}
+
+/* Estilo para el botón */
+.btn {
+    background-color: #4b94c5;
+    color: #fff;
+    padding: 20px 30px;
+    font-size: 25px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 10px 0;
+    border-radius: 5px; /* Añade bordes redondeados */
+}
+
+.btn:hover {
+    background-color: #017cf0;
+}
+
+/* Estilo para el input de selección de imagen */
+#fileInput {
+    display: none; /* Oculta el input de selección de imagen */
+}
+
+/* Estilo para el canvas */
+/* Estilo para el canvas (oculto inicialmente) */
+canvas {
+    display: none;
+    border: 1px solid #00d9ff; /* Un borde para visualización */
+    max-width: 100%; /* Ajusta el tamaño máximo para evitar desbordamiento */
+    margin: 10px auto; /* Centra el canvas en el contenedor */
+}
+
+#resizeButton {
+    background: #4b94c5;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 20px 30px;
+    cursor: pointer;
+    display: none;
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+#resizeButton:hover {
+    background: #017cf0;
+    color: rgb(255, 255, 255);
+}
+
+/* Estilo para el botón de descarga */
+.download-link {
+    display: none;
+    background-color: transparent;
+    color: #017cf0;
+    padding: 10px 20px; /* Ajusta el tamaño del botón aquí */
+    text-decoration: none;
+    margin-top: 10px;
+    display: block;
+    border-radius: 8px;
+    font-size: 30px;
+}
+
+.download-link:hover {
+    background: #017cf0;
+    color: #fff;
+}
+
